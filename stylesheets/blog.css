@@ -1,0 +1,130 @@
+body {
+  background: url('../imgs/blog-background.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.main-content {
+  width: 50%;
+  margin: 0 auto;
+  float: left;
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-post {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #A7E9FF;
+}
+
+.navbar-post ul {
+  list-style: none;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+.navbar-post li {
+  font-size: 1.5em;
+   line-height: 40px;
+   height: 40px;
+   display: inline-block;
+   margin-top: 0px;
+   margin-right: 20px;
+}
+
+.navbar ul {
+   list-style: none;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+.navbar li {
+   font-size: 1.5em;
+   line-height: 40px;
+   height: 40px;
+   display: inline-block;
+   margin-top: 0px;
+   margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  text-shadow: 2px 2px gray;
+  color: #fff;
+  border-bottom: 1px solid gray;
+}
+
+nav a:hover {
+  color: black;
+}
+
+a.active {
+      background-color: #fff;
+      color: #444;
+    }
+
+aside {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+aside p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+aside img {
+  border:2px solid gray;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.blog-post {
+  margin-top: 100px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.post-text {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+  margin-left: 45px;
+  font-size: 1.5em;
+}
+
+.blog-post a:link {
+  color: white;
+   text-shadow: 2px 2px gray;
+}
+
+.blog-post a:visited {
+  color: white;
+}
+
+.post-text a:hover {
+  color: black;
+}
+
+.blog-image img {
+  float: left;
+  border: 2px solid black;
+  border-radius: 50%;
+}

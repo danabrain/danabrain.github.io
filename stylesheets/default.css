@@ -1,0 +1,60 @@
+body {
+    background: url('../imgs/danahike.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.header {
+  margin: 100px auto;
+  font-size: 300%;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  margin: 150px 0 10px 0;
+  text-shadow: 2px 2px gray;
+}
+
+h4 {
+  margin-top: 10px;
+  text-shadow: 2px 2px gray;
+}
+
+.nav ul {
+   list-style: none;
+   text-align: center;
+   padding: 0;
+   margin: 0;
+}
+
+.nav li {
+   font-size: 2em;
+   line-height: 40px;
+   height: 40px;
+   display: inline-block;
+   margin-top: 40px;
+   margin-left: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  text-shadow: 2px 2px gray;
+  color: #fff;
+}
+
+nav a:hover {
+  color: black;
+}
+
+a.active {
+      background-color: #fff;
+      color: #444;
+    }
+
+
+
