@@ -4,33 +4,43 @@
 
   <title>Dana's Blog</title>
   <meta charset = "UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
 </head>
 
 <body>
 <div>
+  <nav>
+  <div class="navbar">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="#">Who am I?</a></li>
+     <li><a href="#">Writing</a></li>
+     <li><a href="#">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+     <li><a href="#">Say Hello</a><li>
+    </ul>
+  </div></nav>
 
-  <div>
-      <nav>
-      <a href="../index.html">Home</a>
-      <a href="#">Who am I?</a>
-      <a href="#">Projects</a>
-      <a href="#">Hire me!</a>
-      <a href="#">Say Hello</a>
-      </nav>
-  </div>
 
   <div>
     <aside>
-      <h4>I love to write + I love to code == I love to write about code!  Enjoy some musings from a beginner.</h4>
-      <img src="../imgs/danahorse.jpg" alt="Dana smiling, ready to be hired by YOU!">
+      <div class="aside-img">
+      <img src="../imgs/danahorse.jpg" alt="Dana smiling, ready to be hired by YOU!"></div>
+      <div class="aside-text">
+        <p>I love to write + I love to code == I love to write about code!</p>
+        <p>Enjoy some musings from a beginner.</p></div>
     </aside>
   </div>
 
-  <div>
-    <article>
-      <h3><a href="http://danabrain.github.io/blog/git.html">Dana + Git != True Love</a></h3><a href="http://danabrain.github.io/blog/git.html"><img src="../imgs/blog1image.jpg" alt="Coding Portal" style="width:200px;height200px;"></a>
-    </article>
+  <div class="main-content">
+    <article><div class="blog-post">
+      <div class="post-text"><h3><a href="git.html">Dana + Git != True Love</a></h3></div>
+      <a href="git.html" class="blog-image"><img src="../imgs/blog1image.jpg" alt="Coding Portal" style="width:200px;height200px;"></a>
+    </div></article>
   </div>
+
 
 </div>
 </body>
