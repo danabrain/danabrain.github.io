@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <nav>
+  <div class="navbar-post">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="#">Who am I?</a></li>
+     <li><a href="blog-template.html">Writing</a></li>
+     <li><a href="#">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+     <li><a href="#">Say Hello</a><li>
+    </ul>
+  </div></nav>
+
+<main class="main">
+  <h1>CSS Concepts</h1>
+  <h2>(AKA My back hurts and I'm squinting.)</h2>
+  <h4>November 8, 2015</h4>
+
+  <section>
+
+    <h1>What is the difference between margin, border, and padding?</h1>
+
+    <p>You may find yourself pondering this question as you begin to learn CSS.  It's confusing until it's not, so let me break it down for you.</p>
+
+    <div class="post-image"><img src="../imgs/box-model.png" alt="CSS box-model"></div>
+
+    <p>Or really, let the above image break it down for you.</p>
+
+    <p>The CSS Box Model helps designers position elements by creating 3 means of augmenting or diminishing space.</p>
+
+    <ol>
+      <li>Margin: the space around the outside of the element.  This will determine how closely it can snuggle up to other elements.</li>
+      <div class="post-image"><img src="../imgs/margin.gif" alt="Margin diagram"></div>
+      <li>Border: this is the line that you might draw around the element itself.  The border can be very thick, very thin, or even 0 pixels wide.  But, even if you can't see it, it's still there.</li>
+      <div class="post-image"><img src="../imgs/border-width.jpg" alt="Border-width diagram"></div>
+      <li>Padding:  The space between the element and the inside surface of the border.  More padding gives the element some breathing room.  Less will constrict the border close to the element itself.</li>
+      <div class="post-image"><img src="../imgs/padding.png" alt="Padding diagram"></div>
+    </ol>
+
+  <p>So, when would you use each of these and why?</p>
+
+  <p>Say you wanted to have two blocks side by side.  You might write the following code:</p>
+
+  <div class="codeblock">
+  <div class="code"><img src="../imgs/htmlcode.png"></div>
+  <div class="csssnip"><img src="../imgs/csssnip.png"></div></div>
+  <div>
+
+  <p>Which would result in the following blocks:</p>
+
+  <div class="post-image"><img src="../imgs/blocks.png" alt="Blocks"></div>
+
+
+  <div class="text-box">
+  <p>Not super pretty.  But they'll do the job.  So, let's change the margins so they have a little room between them.</p>
+
+</div>
+
+  <p>Here I've given Block 1 a margin-left of 40px (pixels).  You can see that it now bumps out past its border, and Block 2 can only come within 40px of it on the left.</p>
+
+   <div class="post-image"><img src="../imgs/marginblocks.png" alt="Blocks"></div>
+
+
+  <p>Now, for border.  I'm going to give the block different borders so you can see the effect of border width, color, and style.</p>
+
+  <p> Block 2 has a thin, dotted, yellow border and Block 1 has a thick, solid, blue border.</p>
+
+
+   <div class="post-image"><img src="../imgs/borderblocks.png" alt="Blocks"></div>
+
+   <p>Finally, let's play with padding.  I'm going to increase the padding of Block 1 so you can see the difference.</p>
+
+    <div class="post-image"><img src="../imgs/paddingblocks.png" alt="Blocks"></div>
+
+    <p>Padding of 50px makes a big difference!  Here is the final CSS for the two blocks:</p>
+
+    <div class="post-image"><img src="../imgs/finalcss.png" alt="Blocks"></div>
+
+    <p>And there you have it, my friends.  Margins, borders, and padding.</p>
+  </section>
+</main>
+</body>
