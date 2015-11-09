@@ -5,7 +5,14 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Dancing Script', cursive;
+}
 
+h1, h4 {
+   text-shadow: 2px 2px white;
+}
+
+p, li {
+  font-size: 130%;
 }
 
 .main-content {
@@ -44,6 +51,10 @@ body {
    display: inline-block;
    margin-top: 0px;
    margin-right: 20px;
+}
+
+.navbar-post a {
+  border: none;
 }
 
 .navbar ul {
@@ -128,3 +139,42 @@ aside img {
   border: 2px solid black;
   border-radius: 50%;
 }
+
+.post-image {
+  margin: 40px auto;
+}
+
+.codeblock {
+  margin: 0 auto;
+  float: clear;
+}
+
+.blocks {
+  float: clear;
+}
+
+.block-1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 10px solid blue;
+  float: right;
+  margin-left: 40px;
+  padding: 50px;
+}
+
+.block-2 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 3px dotted yellow;
+  float: right;
+}
+
+.text-box {
+  float: clear;
+
+}
+
+
+
