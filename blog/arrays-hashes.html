@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <nav>
+  <div class="navbar-post">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="#">Who am I?</a></li>
+     <li><a href="blog-index.html">Writing</a></li>
+     <li><a href="#">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+     <li><a href="#">Say Hello</a><li>
+    </ul>
+  </div></nav>
+
+<main class="main">
+  <h1>Arrays and Hashes</h1>
+  <h2></h2>
+  <h4>November 15, 2014</h4>
+
+  <section>
+    <h2>Arrays</h2>
+    <p>Array are ordered sets of information, great for storing information you'd like to access numerically or by position.  Information is stored in the order it was entered (unless you go in afterwards and replace, add, or delete something).</p>
+
+    <p>There are several ways to make arrays, including Array.new and the literal (square bracket) constructor: [].  My favorite new little trick I learned from my array research is the %w constructor, to create an array of strings without having to enclose each element in quotation marks when you populate it.  Check it out:</p>
+
+    <script src="https://gist.github.com/danabrain/a6ad24d328fa09327b45.js"></script>
+
+    <p>So, that's pretty sweet.  Arrays can be transformed into other objects (like strings), reorganized (with methods like sort), altered (with handy methods like push, pop, shift, and unshift), merged with other arrays (using .concat or +), and flattened into a one-dimensional array, if they contain nested arrays.</p>
+
+  </section>
+
+  <section>
+    <h2>Hashes</h2>
+    <p>Hashes are kind of like arrays with extra functionality.  They are also ordered sets of information, but their values are stored in a pair with a corresponding key, like so:</p>
+
+    <script src="https://gist.github.com/danabrain/e0537da7b4a0703e5049.js"></script>
+
+    <p>When you are creating key/value pairs, the key can be any object, but it has to be unique.  You can have duplicate values, but you cannot have duplicate keys.  If you duplicate a key, it will simply overwrite the first time you used that key.</p>
+
+    <p>Hashes are just as agile as arrays as far as changing, combining, and transforming the information inside.  It can be confusing to decide when to use an array vs. when to use a hash.</p>
+
+  </section>
+
+  <section>
+    <h2>An Example of Use</h2>
+
+    <p>The example I came up with is customer profiles and customer numbers.  If I were an online merchant and I wanted to store information about a customer (their profile), I'd probably use a hash.  That's because it would be easier for me to access a last name or credit card using a key named "last_name" or "credit_card" than to remember which index number in a 20 element array corresponded with the credit card number.<p>
+
+    <script src="https://gist.github.com/danabrain/00bbd8617afb9ca051f2.js"></script>
+    </section>
+
+    <p>So, here I have multiple customer profiles.  Naturally, if I were actually storing customer information, I would have many keys to correspond to email, address, phone number, order history, etc.  But, even though this is a simple example, it should be clear that storing values with descriptive keys in a customer profile hash makes sense.</p>
+
+    <p>While it is helpful to have the customer profile as a hash, I might like to store my customer profiles themselves in an array.  That way, each profile will be assigned an index number, which can serve as their customer number.</p>
+
+    <script src="https://gist.github.com/danabrain/9ef7b24f3052970deab2.js"></script>
+
+    <p>I could also store each customer's order history as an array of hashes.  The array indices would correspond with order numbers, and the value of each element would be a hash with information about the order, including date ordered, date shipped, contents, and payment method.</p>
+
+    <p>This is a simple example but I hope it helped explain arrays and hashes a little bit!</p>
+
+  </section>
+  <main>
+</body>
+</html>
