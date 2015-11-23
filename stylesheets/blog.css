@@ -4,7 +4,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+
 }
 
 h1, h4 {
@@ -25,6 +26,16 @@ p, li {
   width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 50px;
+}
+
+.navbar {
+  margin-bottom: 20px;
 }
 
 .navbar-post {
@@ -81,7 +92,7 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
+  color: #b30059;
 }
 
 a.active {
@@ -91,29 +102,31 @@ a.active {
 
 aside {
   display: inline-block;
-  float: right;
-  margin-top: 20px;
-  margin-right: 100px;
+  margin-left: 40px;
 }
 
-aside p {
+.aside-text {
+  margin: 0px auto;
   text-align: center;
-  font-weight: bolder;
 }
 
-aside img {
-  border:2px solid gray;
+.dana-pic {
+  border: 2px solid gray;
   border-radius: 100%;
-  margin: 0 auto;
 }
+
 
 .blog-post {
+  /*border: 2px solid black;*/
   margin-top: 100px;
   margin-left: 40px;
   display: inline-block;
 }
 
 .post-text {
+  /*border: 2px solid black;*/
+  text-shadow: 2px 2px gray;
+  text-decoration: underline;
   display: inline-block;
   float: right;
   margin-top: 30px;
@@ -123,21 +136,21 @@ aside img {
 
 .blog-post a:link {
   color: white;
-   text-shadow: 2px 2px gray;
+  text-shadow: 2px 2px gray;
 }
 
 .blog-post a:visited {
   color: white;
 }
 
-.post-text a:hover {
-  color: black;
+.blog-post a:hover {
+  color: #b30059;
 }
 
 .blog-image img {
   float: left;
   border: 2px solid black;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 
 .post-image {
@@ -175,6 +188,44 @@ aside img {
   float: clear;
 
 }
+
+.twitter-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.facebook-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.linkedin-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.github-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.email-button-blog  {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+
+
 
 
 
