@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable Methods for Noobs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <nav>
+  <div class="navbar-post">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="#">Who am I?</a></li>
+     <li><a href="blog-index.html">Writing</a></li>
+     <li><a href="#">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+    </ul>
+  </div></nav>
+
+<main class="main">
+  <h1>Enumerables for Noobs</h1>
+  <h2>Or, "OMFG, this exists??? YES YES YES YES YES!!!!!!!"</h2>
+  <h4>November 22, 2015</h4>
+
+  <section>
+
+
+  <h3>Ah, the Enumerable map method!</h3>
+  <div class="post-image"><img src="../imgs/map.jpeg" alt="Pirate map">
+  <p>Erm, not exactly.</p>
+  <div class="post-image"><img src="../imgs/map-graphic.jpg" alt="Pirate map">
+  <p>There we go!</p>
+
+  <p>When I first heard about the Enumerable class, I was frightened.  The word was weird, it only kind of made sense...and then when I checked out the documentation there were words like "mix-ins" and exclamation points all over the place.  I was completely disoriented and kept my distance.</p>
+
+  <p>Until Dev Bootcamp forced me to go back.</p>
+
+  <p>HOLY CRAP, you guys.  Enumerables will enhance your life in ways you could not have imagined.  I'm not saying they will fill up your gas tank or walk your dog, but these methods are built on the assumption of iteration across a data collection, and there is a wonderful diversity of methods to choose from that can meet many of your programming needs.</p>
+
+  <p>I chose to explain the .map method for this assignment, because it seems to be powerful and frequently used.  I wanted to really understand it.</p>
+
+  <p>Here is the documentation for .map:</p>
+
+  <div class="post-image"><img src="../imgs/map-docs.jpg" alt="Ruby docs for .map">
+
+  <p>There is some great information here.  Map, unlike other enumerable methods, will always return an array (that's what the --> array after the gibberish at the top means).  This array will contain the same number of elements as the original object the method was passed to.  (Scroll back up to see that picture with the rubber band--the original object had 4 elements, and the returned object also has 4.  The objects are different, but they are still all present, and in their original order.  They've each been manipulated in exactly the same way.)</p>
+
+  <p>Map will execute a given code block on each of the elements in the original object.  So, in the rubber band graphic, each object is being "stretched", one after the other as map moves through the object.  You can see that the returned object contains horizantally skewed versions of the original elements.</p>
+
+  <p>So, what's the difference between map and each?  The answer lies in the return value of the two methods.  Each returns the object that it is called on, in it's original form.</p>
+
+  <script src="https://gist.github.com/danabrain/cba5f8e878c24203e485.js"></script>
+
+  <p>Here I've run each on my_array with the code block x.upcase.  The return value of this method is the last line, after the =>.  Even though .each *did* move through my_array and apply .upcase to each object, the ultimate return value of the method is my_array.  Now look what happens when we use .map instead:</p>
+
+  <script src="https://gist.github.com/danabrain/9b027a9a949f775f08c0.js"></script>
+
+  <p>.map returned a new array, that contains all the original elements, in order, that were transformed by the code block.  However, the original my_array still exists!</p>
+
+  <script src="https://gist.github.com/danabrain/e90f7819d8106849decf.js"></script>
+
+  <p>So, while each will temporarily transform each element of an object, it ultimately returns itself.  Those changes aren't saved.  Map will create a new array, and store all the transformed elements in there, in order.  Map returns that array.  This is handy for when you need to transform the elements an object and keep the results!</p>
+
+  <p>I hope this little explanation of map was helpful!</p>
+
+  </section>
+  <main>
+</body>
+</html>
