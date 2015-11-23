@@ -4,12 +4,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Dancing Script', cursive;
-
+    font-family: 'Lora', serif;
 }
 
 .header {
-  margin: 100px auto;
+  display: 2px solid black;
+  margin: 0px auto;
   font-size: 300%;
   text-align: center;
   color: black;
@@ -25,6 +25,11 @@ h4 {
   text-shadow: 2px 2px gray;
 }
 
+.nav {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 .nav ul {
    list-style: none;
    text-align: center;
@@ -48,13 +53,53 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
+  color: #b30059
+;
 }
 
 a.active {
       background-color: #fff;
       color: #444;
     }
+
+.buttons {
+  margin-bottom: 0px;
+}
+
+.twitter-follow-button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.facebook-follow-button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.linkedin-follow-button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.github-follow-button {
+  display: inline-block;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+.email-button  {
+  display: inline-block;
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
 
 
 
