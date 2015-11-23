@@ -17,13 +17,13 @@ p, li {
 }
 
 .main-content {
-  width: 50%;
-  margin: 0 auto;
-  float: left;
+  width: 60%;
+  margin-left: 50px;
+  display: inline-block;
 }
 
 .main {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
