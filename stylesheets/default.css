@@ -12,12 +12,12 @@ body {
   margin: 0px auto;
   font-size: 300%;
   text-align: center;
-  color: black;
+  color: #003e80;
 }
 
 h1 {
   margin: 150px 0 10px 0;
-  text-shadow: 2px 2px gray;
+  text-shadow: 2px 2px black;
 }
 
 h4 {

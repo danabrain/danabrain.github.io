@@ -1,0 +1,121 @@
+body {
+  background: url('../imgs/blog-background.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lora', serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+   list-style: none;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+.navbar li {
+   font-size: 1.5em;
+   line-height: 40px;
+   height: 40px;
+   display: inline-block;
+   margin-top: 0px;
+   margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  text-shadow: 2px 2px gray;
+  color: #fff;
+  border-bottom: 1px solid gray;
+}
+
+nav a:hover {
+  color: #b30059;
+}
+
+nav a:active {
+      background-color: #fff;
+      color: #444;
+    }
+
+.navbar-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+.about {
+  width: 80%;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.headshot {
+  display: inline-block;
+  border: 5px solid gray;
+  vertical-align: middle;
+  }
+
+.about ul {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.about li {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 130%;
+  color: #003e80;
+}
+
+.buttons {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitter-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.facebook-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.linkedin-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.github-follow-button-blog {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.email-button-blog  {
+  display: inline-block;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+
