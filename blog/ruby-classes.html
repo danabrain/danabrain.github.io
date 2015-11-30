@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <nav>
+  <div class="navbar-post">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../about.html">Who am I?</a></li>
+     <li><a href="blog-index.html">Writing</a></li>
+     <li><a href="#">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+    </ul>
+  </div></nav>
+
+<main class="main">
+  <h1>Ruby Classes</h1>
+  <h2>Blueprints for Code</h2>
+  <h4>November 30, 2015</h4>
+
+  <section>
+      <p>Ruby Classes are a built-in way to organize information and bring your objects to life.  They are used to define a type of object, and then give that object functionality through methods.</p>
+
+      <p>In this example, we are going to make a Pet Class.  To start off we need to decide what characteristics each pet should have when we create them.  To keep it simple, let's initialize each Pet with a name and a type.</p>
+
+      <script src="https://gist.github.com/danabrain/9c400df5588fe9f3acba.js"></script>
+
+      <p>Now, when I make a new Pet, I need to pass in two arguments.</p>
+
+      <script src="https://gist.github.com/danabrain/78a4432b0cfaee71f742.js"></script>
+
+      <p>You may notice those "@" signs before the variables inside the initialize method.  These are called instance variables, and they are used to describe an instance of a method.  In this case, our instances are "my_pet" and "my_other_pet".  The instance variables assigned to each of those instances will travel with the instance across class methods.  This means that I can access the name and type of pet that my_pet is OUTSIDE the initialize method!<p>
+
+      <p>To see this in action, I've created a name method, and a type method.  They're pretty simple, they just display these attributes of the instance we've created.  Because they are class methods in class Pet, I can call them with the .method_name method call convention.</p>
+
+      <script src="https://gist.github.com/danabrain/aac75f03630b1056b940.js"></script>
+
+      <p>There's a cleaner way to create these class methods in Ruby, using the attribute accessor (a combination of what's called "getter" or reading methods, and "setter" or writing methods.)  Below, I've used this technique to eliminate the need for the def name and def type methods.  The below code will produce the same output as above</p>
+
+      <script src="https://gist.github.com/danabrain/62bf575f6aaa81d7589a.js"></script>
+
+      <p>So far, our pet doesn't do anything very interesting.  So, lets' give him an activity.</p>
+
+      <script src="https://gist.github.com/danabrain/637751a9f5143d978f86.js"></script>
+
+      <p>Of course, you could do it this way, too:</p>
+
+      <script src="https://gist.github.com/danabrain/f278d2498adce9975f10.js"></script>
+
+      <p>Classes can be confusing at first, but if you think of them as blueprints that tell the instances of your object what to be and how to act, they become wonderfully helpful tools to create usable, interactive code!</p>
+
+
+  </section>
+  <main>
+</body>
+</html>
