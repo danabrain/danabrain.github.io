@@ -45,17 +45,19 @@ body {
 
 .column1 {
   padding: 1em;
+  margin-left: 3em;
 }
 
 @media screen and (min-width: 48em) {
-  .main {
+  .photo, .column1 {
     width: 30%;
     padding-right: 1em;
     float: left;
   }
-  .sb {
+  .column2 {
     float: right;
-    width: 70%;
+    width: 60%;
+
   }
 }
 
@@ -68,10 +70,13 @@ body {
   border: 5px solid #A36234;
   }
 
+.column2 {
+  margin-top: 5em;
+}
+
 .column2 ul {
   display: inline-block;
-  margin-top: 5em;
-  width: 50%;
+  width: 80%;
 }
 
 .column2 li {
