@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Recursion</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <nav>
+  <div class="navigation">
+    <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../about.html">Who am I?</a></li>
+     <li><a href="blog-index.html">Writing</a></li>
+     <li><a href="../projects/projects-index.html">Projects</a><li>
+     <li><a href="#">Hire me!</a><li>
+    </ul>
+  </div></nav>
+
+  <div class="main-content">
+  <h1>Recursion</h1>
+  <h2>Subtitle</h2>
+  <h4>December 13, 2015</h4>
+
+  <section>
+    <p>Recursion, at it's simplest (bahahahaha) is a method that calles itself.  My understanding is that recursion will break a task down into smaller and smaller tasks, complete the smaller tasks and pass their outcomes back up to the next bigger tasks in line, and keep this up until a base case (or point at which the method should no longer call itself) is reached.</p>
+
+    <img class="tree" src="../imgs/tree.png" alt="fractal tree">
+
+    <p>To put a pop culture reference on it, recursion is like the movie Inception: a dream within a dream within a dream.  You could also think about it as those Russian stacking dolls.</p>
+
+    <p>It seems as though anything you can solve recursively you can also solve by using loops and iterators, but it seems as though there may be some cases where recursion is more efficient and vice-versa.</p>
+
+    <p>Perhaps one simple way to see recursion in action when writing a method for a factorial in Ruby:</p>
+
+    <script src="https://gist.github.com/danabrain/95bb516f880400da9c61.js"></script>
+
+    <p>Here, the idea is that the factorial of a number is that number times all the numbers that came before it.  (So, 5! = 5*4*3*2*1).  Because the factorial 0 is 1, we can use recursion to break this problem down like so:</p>
+
+    <script src="https://gist.github.com/danabrain/d80e20f18c6825e9da82.js"></script>
+
+    <p>So here, recursion has split the task into smaller and smaller tasks until there is no smaller task to complete.  Then, it sends the output back up the line, plugging them in where they belong in the chain, until we reach the base case, which in this example is factorial(5).</p>
+
+    <p>The Bastard's Guide to Ruby has an awesome metaphor that involves weighing a huge pile of rocks.  It's worth a <a href="http://ruby.bastardsbook.com/chapters/recursion/">read.</a></p>
+
+  </section>
+</div>
+</body>
