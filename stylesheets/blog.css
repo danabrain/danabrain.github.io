@@ -1,197 +1,97 @@
+/* Blog Index and Posts */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background: url('../imgs/blog-background.jpg') no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     font-family: 'Lora', serif;
-
+    color: #D4CAAB;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h4 {
-   text-shadow: 2px 2px white;
+/* Navigation Bar */
+
+.navigation {
+  background-color:#1B4776;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-p, li {
-  font-size: 130%;
+.navigation li a {
+  display: block;
+  border-bottom: 1px solid #000;
+  padding: 1em;
+  text-decoration: none;
+  color: #D4CAAB;
 }
 
-.main-content {
-  width: 60%;
-  margin-left: 50px;
-  display: inline-block;
+.navigation li a:hover {
+  color: #3C96F5;
+}
+
+.navigation li a:active {
+  background-color: #fff;
+  color: #444;
+}
+
+@media all and (min-width: 30em) {
+  .navigation li {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+  .navigation li a {
+    padding: 1em 0.5em;
+    border: 0;
+  }
+}
+
+/* Blog Index */
+
+.column1 {
+  padding: 1em;
+}
+
+@media screen and (min-width: 48em) {
+  .main {
+    width: 50%;
+    padding-right: 1em;
+    float: left;
+  }
+  .sb {
+    float: right;
+    width: 50.%;
+  }
+}
+
+.sb {
+  text-align: center;
+  margin-right: 8em;
 }
 
 .main {
-  width: 60%;
-  margin: 0 auto;
   text-align: center;
+  color: #A36234;
 }
 
-.sidebar {
-  position: fixed;
-  top: 10px;
-  right: 50px;
+.main a {
+  color: #A36234;
 }
 
-.navbar {
-  margin-bottom: 20px;
-}
-
-.navbar-post {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background-color: #A7E9FF;
-}
-
-.navbar-post ul {
-  list-style: none;
-   text-align: center;
-   padding: 0px;
-   margin: 0px;
-}
-
-.navbar-post li {
-  font-size: 1.5em;
-   line-height: 40px;
-   height: 40px;
-   display: inline-block;
-   margin-top: 0px;
-   margin-right: 20px;
-}
-
-.navbar-post a {
-  border: none;
-}
-
-.navbar ul {
-   list-style: none;
-   text-align: center;
-   padding: 0px;
-   margin: 0px;
-}
-
-.navbar li {
-   font-size: 1.5em;
-   line-height: 40px;
-   height: 40px;
-   display: inline-block;
-   margin-top: 0px;
-   margin-left: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  text-shadow: 2px 2px gray;
-  color: #fff;
-  border-bottom: 1px solid gray;
-}
-
-nav a:hover {
-  color: #b30059;
-}
-
-a:visited {
-  color: #fff;
-}
-
-a.active {
-      background-color: #fff;
-      color: #444;
-    }
-
-
-
-aside {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.aside-text {
-  margin: 0px auto;
-  text-align: center;
+.main a:hover {
+  color: #3C96F5;
 }
 
 .dana-pic {
-  border: 4px solid gray;
+  border: 4px solid #A36234;
+  height: 300px;
+  width: 300px;
   margin-bottom: 10px;
-  /*border-radius: 100%;*/
+  border-radius: 100%;
 }
 
-
-.blog-post {
-  margin-top: 100px;
-  margin-left: 40px;
-  display: inline-block;
-}
-
-.post-text {
-  text-shadow: 2px 2px gray;
-  text-decoration: underline;
-  display: inline-block;
-  float: right;
-  margin-top: 30px;
-  margin-left: 45px;
-  font-size: 1.5em;
-}
-
-.blog-post a:link {
-  color: #003e80;
-  text-shadow: 2px 2px gray;
-}
-
-.blog-post a:visited {
-  color: #003e80;
-}
-
-.blog-post a:hover {
-  color: #b30059;
-}
-
-.blog-image img {
-  float: left;
-  border: 2px solid black;
-}
-
-.post-image {
-  margin: 40px auto;
-}
-
-.codeblock {
-  margin: 0 auto;
-  float: clear;
-}
-
-.blocks {
-  float: clear;
-}
-
-.block-1 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  border: 10px solid blue;
-  float: right;
-  margin-left: 40px;
-  padding: 50px;
-}
-
-.block-2 {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  border: 3px dotted yellow;
-  float: right;
-}
-
-.text-box {
-  float: clear;
-
-}
+/* Contact Buttons */
 
 .twitter-follow-button-blog {
   display: inline-block;
@@ -228,3 +128,50 @@ aside {
   width: 50px;
 }
 
+/* Blog Post Pages */
+
+.main-content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #A36234;
+  padding: 1em;
+}
+
+.tree {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+
+.codeblock {
+  margin: 0 auto;
+  float: clear;
+}
+
+.blocks {
+  float: clear;
+}
+
+.block-1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 10px solid blue;
+  float: right;
+  margin-left: 40px;
+  padding: 50px;
+}
+
+.block-2 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 3px dotted yellow;
+  float: right;
+}
+
+.text-box {
+  float: clear;
+
+}
